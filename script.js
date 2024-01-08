@@ -1,9 +1,9 @@
-// let firstName = prompt('Veuillez entrer un premier prénom');
-// let secondName = prompt('Veuillez entrer un second prénom');
-// let firstState = prompt('Veuillez entrer un premier état du jour');
+// let firstName   = prompt('Veuillez entrer un premier prénom');
+// let secondName  = prompt('Veuillez entrer un second prénom');
+// let firstState  = prompt('Veuillez entrer un premier état du jour');
 // let secondState = prompt('Veuillez entrer un second état du jour');
 // let hour = prompt('Veuillez entrer une heure');
-// let day = prompt('Veuillez entrer un jour');
+// let day  = prompt('Veuillez entrer un jour');
 
 
 // console.log(`${firstName} : Bonjour !`);
@@ -26,12 +26,12 @@
 //     console.log('Hey ! Vous êtes majeur !');
 // } else if (age >= 21) {
 //     console.log('Vous êtes majeur dans le monde entier !');
-// }
+// };
 
 
-let first = prompt('Veuillez entrer un premier nombre');
+let first  = prompt('Veuillez entrer un premier nombre');
 let second = prompt('Veuillez entrer un second nombre');
-let third = prompt('Veuillez entrer un troisième nombre');
+let third  = prompt('Veuillez entrer un troisième nombre');
 
 if (first == second && second == third) {
     console.log('Les trois variables sont identiques');
@@ -41,4 +41,4 @@ else if (first == second || second == third || first == third) {
 }
 else {
     console.log('Les trois variables sont différentes');
-}
+};
