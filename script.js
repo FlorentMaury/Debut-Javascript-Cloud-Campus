@@ -2,8 +2,8 @@
 // let secondName  = prompt('Veuillez entrer un second prénom');
 // let firstState  = prompt('Veuillez entrer un premier état du jour');
 // let secondState = prompt('Veuillez entrer un second état du jour');
-// let hour = prompt('Veuillez entrer une heure');
-// let day  = prompt('Veuillez entrer un jour');
+// let hour        = prompt('Veuillez entrer une heure');
+// let day         = prompt('Veuillez entrer un jour');
 
 
 // console.log(`${firstName} : Bonjour !`);
