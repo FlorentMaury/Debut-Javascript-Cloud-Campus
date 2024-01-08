@@ -1,3 +1,5 @@
+        // EXERCICE UN.
+
 // let firstName   = prompt('Veuillez entrer un premier prénom');
 // let secondName  = prompt('Veuillez entrer un second prénom');
 // let firstState  = prompt('Veuillez entrer un premier état du jour');
@@ -18,6 +20,8 @@
 // console.log(`${secondName} : D’acc.`);
 
 
+        // EXERCICE DEUX.
+
 // let age = prompt('Veuillez entrer votre âge');
 
 // if (age < 18) {
@@ -29,16 +33,48 @@
 // };
 
 
-let first  = prompt('Veuillez entrer un premier nombre');
-let second = prompt('Veuillez entrer un second nombre');
-let third  = prompt('Veuillez entrer un troisième nombre');
+        // EXERCICE TROIS.
 
-if (first == second && second == third) {
-    console.log('Les trois variables sont identiques');
-}
-else if (first == second || second == third || first == third) {
-    console.log('Deux des variables sont de valeurs égales');
-}
-else {
-    console.log('Les trois variables sont différentes');
-};
+// let first  = prompt('Veuillez entrer un premier nombre');
+// let second = prompt('Veuillez entrer un second nombre');
+// let third  = prompt('Veuillez entrer un troisième nombre');
+
+// if (first == second && second == third) {
+//     console.log('Les trois variables sont identiques');
+// }
+// else if (first == second || second == third || first == third) {
+//     console.log('Deux des variables sont de valeurs égales');
+// }
+// else {
+//     console.log('Les trois variables sont différentes');
+// };
+
+
+        // EXERCICE QUATRE.
+
+// const byTwoNumber = prompt("Veuillez saisir un chiffre entre 0 et 10 : ");
+
+// if (byTwoNumber > 10) {
+//     console.log("Vous êtes trop gourmand...")
+// } else {
+//     for (let i = 1; i <= byTwoNumber; i++) {
+//         console.log(`${i} -> ${i * 2}`);
+//     }
+// }
+
+        // EXERCICE CINQ.
+
+// const number = prompt("Veuillez saisir un nombre : ");
+// const type   = prompt("Voulez-vous afficher les nombres pairs ou impairs ? (Entrez 'p' pour pair, 'i' pour impair)");
+
+// if (type == "p") {
+//     for (let i = 0; i <= number; i += 2) {
+//         console.log(i);
+//     }
+// } else if (type == "i") {
+//     for (let i = 1; i <= number; i += 2) {
+//         console.log(i);
+//     }
+// } else {
+//     console.log("Veuillez ne choisir qu'entre 'p' pour pair et 'i' pour impair.");
+// }
