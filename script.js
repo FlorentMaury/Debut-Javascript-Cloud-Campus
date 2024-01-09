@@ -135,24 +135,14 @@
 
 // Variante avec une fonction.
 
-// function drawPyramid(floorNumbers) {
-//         for (let i = 0; i < floorNumbers; i++) {
-//                 let floor = '';
+function pyramid(nb) {
+        for (let i = 1; i <= nb; i++) {
+                console.log(' '.repeat(nb - 1) + '#'.repeat(i));
+        }
+}
 
-//                 for (let j = 0; j < floorNumbers; j++) {
-//                 if (j < floorNumbers - i - 1) {
-//                         floor += ' ';
-//                 } else {
-//                         floor += '#';
-//                 }
-//                 }
-
-//                 console.log(floor);
-//         }
-// }
-
-// let floorNumbers = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
-// drawPyramid(floorNumbers);
+let floorNumbers = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
+pyramid(floorNumbers);
 
 
         // EXERCICE SEPT.
