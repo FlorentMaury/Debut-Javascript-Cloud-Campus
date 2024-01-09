@@ -68,35 +68,131 @@
 // const type   = prompt("Voulez-vous afficher les nombres pairs ou impairs ? (Entrez 'p' pour pair, 'i' pour impair)");
 
 // if (type == "p") {
-//     for (let i = 0; i <= number; i += 2) {
+//         for (let i = 0; i <= number; i += 2) {
 //         console.log(i);
-//     }
+//         }
 // } else if (type == "i") {
-//     for (let i = 1; i <= number; i += 2) {
+//         for (let i = 1; i <= number; i += 2) {
 //         console.log(i);
-//     }
+//         }
 // } else {
-//     console.log("Veuillez ne choisir qu'entre 'p' pour pair et 'i' pour impair.");
+//         console.log("Veuillez ne choisir qu'entre 'p' pour pair et 'i' pour impair.");
+// }
+
+// Variante avec une seule boucle.
+
+// if (type == "p") {
+//         for (let i = 0; i <= number; i += 2) {
+//         console.log(i);
+//         }
+// } else if (type == "i") {
+//         for (let i = 1; i <= number; i += 2) {
+//         console.log(i);
+//         }
+// } else {
+//         console.log("Veuillez ne choisir qu'entre 'p' pour pair et 'i' pour impair.");
 // }
 
         // EXERCICE SIX.
 
-let floorNumbers = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
+// let floorNumbers = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
 
-// On boucle sur chaque étage (définis dans la variable floorNumbers).
-for (let i = 1; i <= floorNumbers; i++) {
-        let floor = '';
+// // On boucle sur chaque étage (définis dans la variable floorNumbers).
+// for (let i = 1; i <= floorNumbers; i++) {
+//         let floor = '';
 
-        //On créé les espaces.
-        for (let j = 0; j < floorNumbers - i; j++) {
-        floor += ' ';
-        }
+//         //On créé les espaces.
+//         for (let j = 0; j < floorNumbers - i; j++) {
+//         floor += ' ';
+//         }
 
-        //On créé les dièses.
-        for (let k = 0; k < i; k++) {
-        floor += '#';
-        }
+//         //On créé les dièses.
+//         for (let k = 0; k < i; k++) {
+//         floor += '#';
+//         }
 
-        //La console affiche un résultat par étage selon floorNumber..
-        console.log(floor);
-}
+//         //La console affiche un résultat par étage selon floorNumber..
+//         console.log(floor);
+// }
+
+// Variante avec une seule boucle.
+
+// let floorNumbers = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
+
+// for (let i = 0; i < floorNumbers; i++) {
+// let floor = '';
+
+// for (let j = 0; j < floorNumbers; j++) {
+//         if (j < floorNumbers - i - 1) {
+//         floor += ' ';
+//         } else {
+//         floor += '#';
+//         }
+// }
+
+// console.log(floor);
+// }
+
+// Variante avec une fonction.
+
+// function drawPyramid(floorNumbers) {
+//         for (let i = 0; i < floorNumbers; i++) {
+//                 let floor = '';
+
+//                 for (let j = 0; j < floorNumbers; j++) {
+//                 if (j < floorNumbers - i - 1) {
+//                         floor += ' ';
+//                 } else {
+//                         floor += '#';
+//                 }
+//                 }
+
+//                 console.log(floor);
+//         }
+// }
+
+// let floorNumbers = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
+// drawPyramid(floorNumbers);
+
+
+        // EXERCICE SEPT.
+
+// function checkBirthday() {
+//         let birthday = prompt("Veuillez entrer votre date d'anniversaire (jj/mm/aaaa) :");
+        
+//         let [day, month, year] = birthday.split("/");
+        
+//         let currentDate = new Date();
+//         let currentDay = currentDate.getDate();
+//         let currentMonth = currentDate.getMonth() + 1; // Les mois sont indexés à partir de 0 en JavaScript
+        
+//         if (day == currentDay && month == currentMonth) {
+//                 console.log("Joyeux anniversaire ! Tu obtiens une promotion de 30% sur tous les articles !");
+//         } else {
+//                 console.log("En ce moment, une promotion de 15% sur tous les articles");
+//         }
+// }
+        
+// checkBirthday();
+
+
+        // EXERCICE HUIT.
+
+// function fact(n) {
+//         let result = 1;
+        
+//         for (let i = 2; i <= n; i++) {
+//                 result *= i;
+//         }
+        
+//         return result;
+// }
+
+// let chosenNumber = prompt("De quel nombre veux-tu calculer la factorielle ?");
+// console.log("Le résultat est : " + fact(chosenNumber));
+
+// console.log(fact(4));
+// console.log(fact(6));
+// console.log(fact(8));
+// console.log(fact(2));
+// console.log(fact(1));
