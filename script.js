@@ -78,3 +78,25 @@
 // } else {
 //     console.log("Veuillez ne choisir qu'entre 'p' pour pair et 'i' pour impair.");
 // }
+
+        // EXERCICE SIX.
+
+let floorNumbers = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
+
+// On boucle sur chaque étage (définis dans la variable floorNumbers).
+for (let i = 1; i <= floorNumbers; i++) {
+        let floor = '';
+
+        //On créé les espaces.
+        for (let j = 0; j < floorNumbers - i; j++) {
+        floor += ' ';
+        }
+
+        //On créé les dièses.
+        for (let k = 0; k < i; k++) {
+        floor += '#';
+        }
+
+        //La console affiche un résultat par étage selon floorNumber..
+        console.log(floor);
+}
