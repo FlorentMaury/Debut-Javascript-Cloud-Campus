@@ -364,7 +364,7 @@ const books = [
 
 function wasRented(books) {
         let response = true;
-        books.forEach((book => {
+        books.forEach((book) => {
                 if (book.rented === 0) {
                         response = false;
                 }
