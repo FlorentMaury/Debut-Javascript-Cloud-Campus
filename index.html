@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS initiation</title>
 </head>
+
 <body>
     <h1>JS Initiation</h1>
+
+    <h2>Copieur</h2>
+    <p>
+        Votre texte ici
+        <textarea class="originalText" name="text"></textarea>
+    </p>
+
+    <p>
+        La copie ici
+        <textarea class="copyText" name="copy"></textarea>
+    </p>
+
+
+    <h2>Tableau de calcul</h2>
+    <label for="number">Saisissez un nombre :</label>
+    <input type="number" class="number" name="name"/>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Carré</th>
+                <th>Cube</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="numberInTable"></td>
+                <td class="squareInTable"></td>
+                <td class="cubeInTable"></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>Déplacement carré</h2>
+    <button class="squareButton">Bouge !</button>
+    <div class="square" style="height: 150px; width: 150px; background: blue;"></div>
+
+    <h2>Galerie</h2>
+
+    <div></div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+        <img class="img1" style="width: 50px; height: 50px;" src="./src/pexels-chevanon-photography-325044.jpg" alt="">
+        <img class="img2" style="width: 50px; height: 50px;" src="./src/pexels-mark-broadhurst-106686.jpg" alt="">
+        <img class="img3" style="width: 50px; height: 50px;" src="./src/pexels-pixabay-162240.jpg" alt="">
+        <img class="img4" style="width: 50px; height: 50px;" src="./src/pexels-pixabay-33045.jpg" alt="">
+        <img class="img5" style="width: 50px; height: 50px;" src="./src/pexels-pixabay-47547.jpg" alt="">
+        <img class="img6" style="width: 50px; height: 50px;" src="./src/pexels-pixabay-50577.jpg" alt="">
+        <img class="img7" style="width: 50px; height: 50px;" src="./src/pexels-pixabay-52961.jpg" alt="">
+        <img class="img8" style="width: 50px; height: 50px;" src="./src/pexels-pixabay-53531.jpg" alt="">
+        <img class="img9" style="width: 50px; height: 50px;" src="./src/pexels-pixabay-53581.jpg" alt="">
+        <img class="img10" style="width: 50px; height: 50px;" src="./src/pexels-pixabay-62289.jpg" alt="">
+    </div>
+
+
     <script src="script.js"></script>
 </body>
+
 </html>

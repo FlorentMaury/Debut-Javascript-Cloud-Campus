@@ -188,54 +188,54 @@
 
 // EXERCICE UN.
 
-let dogs = ['Akita Inu', 'Bouvier bernois', 'Beagle'];
+// let dogs = ['Akita Inu', 'Bouvier bernois', 'Beagle'];
 
-dogs.push('Chihuahua', 'Bulldog');
+// dogs.push('Chihuahua', 'Bulldog');
 
-console.log(dogs);
+// console.log(dogs);
 
-dogs.sort();
+// dogs.sort();
 
-console.log(dogs);
+// console.log(dogs);
 
 
-let dogsObject = [
-        {
-                name: 'Akita Inu',
-                nativeCountry: 'Japon'
-        },
-        {
-                name: 'Bouvier bernois',
-                nativeCountry: 'Suisse'
-        },
-        {
-                name: 'Beagle',
-                nativeCountry: 'Angleterre'
-        },
-        {
-                name: 'Chihuahua',
-                nativeCountry: 'Mexique'
-        },
-        {
-                name: 'Bulldog',
-                nativeCountry: 'Angleterre'
-        }
-];
+// let dogsObject = [
+//         {
+//                 name: 'Akita Inu',
+//                 nativeCountry: 'Japon'
+//         },
+//         {
+//                 name: 'Bouvier bernois',
+//                 nativeCountry: 'Suisse'
+//         },
+//         {
+//                 name: 'Beagle',
+//                 nativeCountry: 'Angleterre'
+//         },
+//         {
+//                 name: 'Chihuahua',
+//                 nativeCountry: 'Mexique'
+//         },
+//         {
+//                 name: 'Bulldog',
+//                 nativeCountry: 'Angleterre'
+//         }
+// ];
 
-console.log(dogsObject);
+// console.log(dogsObject);
 
-let breeds = [];
+// let breeds = [];
 
-let nativeCountries = ['Japon', 'Amerique', 'Angleterre', 'Allemagne', 'Suisse'];
+// let nativeCountries = ['Japon', 'Amerique', 'Angleterre', 'Allemagne', 'Suisse'];
 
-dogs.forEach(dog, index => {
-        breeds.push({
-                name: dog,
-                nativeCountry: nativeCountries[index]
-        });
-})
+// dogs.forEach((dog, index) => {
+//         breeds.push({
+//                 name: dog,
+//                 nativeCountry: nativeCountries[index]
+//         });
+// })
 
-console.log(breeds);
+// console.log(breeds);
 
 
 // EXERCICE DEUX.
@@ -250,137 +250,137 @@ console.log(breeds);
 
 // Utilise le `console.log` afin de vérifier que l'objet retourne bien les informations souhaitées
 
-const user = {
-        firstName: 'John',
-        lastName: 'Doe',
-        age: 27,
-        fullName() {
-                return this.firstName + ' ' + this.lastName;
-        },
-        isMajor() {
-                return this.age > 18;
-        }
-}
+// const user = {
+//         firstName: 'John',
+//         lastName: 'Doe',
+//         age: 27,
+//         fullName() {
+//                 return this.firstName + ' ' + this.lastName;
+//         },
+//         isMajor() {
+//                 return this.age > 18;
+//         }
+// }
 
-console.log(user.firstName);
-console.log(user.lastName);
-console.log(user.age);
-console.log(user.fullName());
-console.log(user.isMajor());
-
-
-// Exercice trois.
+// console.log(user.firstName);
+// console.log(user.lastName);
+// console.log(user.age);
+// console.log(user.fullName());
+// console.log(user.isMajor());
 
 
-const entrepreneurs = [
-        { first: 'Steve', last: 'Jobs', year: 1955 },
-        { first: 'Oprah', last: 'Winfrey', year: 1954 },
-        { first: 'Bill', last: 'Gates', year: 1955 },
-        { first: 'Sheryl', last: 'Sandberg', year: 1969 },
-        { first: 'Mark', last: 'Zuckerberg', year: 1984 },
-        { first: 'Beyonce', last: 'Knowles', year: 1981 },
-        { first: 'Jeff', last: 'Bezos', year: 1964 },
-        { first: 'Diane', last: 'Hendricks', year: 1947 },
-        { first: 'Elon', last: 'Musk', year: 1971 },
-        { first: 'Marissa', last: 'Mayer', year: 1975 },
-        { first: 'Walt', last: 'Disney', year: 1901 },
-        { first: 'Larry', last: 'Page', year: 1973 },
-        { first: 'Jack', last: 'Dorsey', year: 1976 },
-        { first: 'Evan', last: 'Spiegel', year: 1990 },
-        { first: 'Brian', last: 'Chesky', year: 1981 },
-        { first: 'Travis', last: 'Kalanick', year: 1976 },
-        { first: 'Marc', last: 'Andreessen', year: 1971 },
-        { first: 'Peter', last: 'Thiel', year: 1967 }
-];
-
-function filterByYear(entrepreneursArray) {
-        let entrepreneursYear70 = [];
-
-        // Parcourir le tableau
-        entrepreneursArray.forEach(entrepreneur => {
-                // Si l'attribut qui est dans l'objet est entre 1970 et 1980
-                if (entrepreneur.year >= 1970 && entrepreneur.year < 1980) {
-                        entrepreneursYear70.push(entrepreneur);
-                }
-        })
-
-        // Autre solution : L'utilisation de la fonction prédéfinie .filter()
-        /*
-        entrepreneursYear70 = entrepreneursArray.filter(entrepreneur => 
-                                        entrepreneur.year >= 1970 && entrepreneur.year < 1980
-        );
-        */
-
-        // Affichage
-        console.log(entrepreneursYear70);
-}
-
-function filterFullName(entrepreneursArray) {
-        let entrepreneursFullName = [];
-
-        // Parcourir le tableau
-        entrepreneursArray.forEach(entrepreneur => {
-                entrepreneursFullName.push(entrepreneur.last + " " + entrepreneur.first);
-        })
-
-        // Affichage
-        console.log(entrepreneursFullName);
-
-        // S'intéresser au .map() : cela peut-être une alternative
-}
-
-function ageToday(entrepreneursArray) {
-        const currentYear = new Date().getFullYear();
-
-        entrepreneursArray.forEach(entrepreneur => {
-                console.log(entrepreneur.first + " " + entrepreneur.last + ` aurait ${currentYear - entrepreneur.year} ans aujourd'hui.`);
-        })
-}
-
-console.log('Les entrepreneurs nés dans les années 70 :');
-filterByYear(entrepreneurs);
-console.log('Les noms et prénoms des entrepreneurs :');
-filterFullName(entrepreneurs);
-console.log("Quel âge aurait chaque inventeur aujourd'hui ?")
-ageToday(entrepreneurs);
+// // Exercice trois.
 
 
-// Exercice quatre.
+// const entrepreneurs = [
+//         { first: 'Steve', last: 'Jobs', year: 1955 },
+//         { first: 'Oprah', last: 'Winfrey', year: 1954 },
+//         { first: 'Bill', last: 'Gates', year: 1955 },
+//         { first: 'Sheryl', last: 'Sandberg', year: 1969 },
+//         { first: 'Mark', last: 'Zuckerberg', year: 1984 },
+//         { first: 'Beyonce', last: 'Knowles', year: 1981 },
+//         { first: 'Jeff', last: 'Bezos', year: 1964 },
+//         { first: 'Diane', last: 'Hendricks', year: 1947 },
+//         { first: 'Elon', last: 'Musk', year: 1971 },
+//         { first: 'Marissa', last: 'Mayer', year: 1975 },
+//         { first: 'Walt', last: 'Disney', year: 1901 },
+//         { first: 'Larry', last: 'Page', year: 1973 },
+//         { first: 'Jack', last: 'Dorsey', year: 1976 },
+//         { first: 'Evan', last: 'Spiegel', year: 1990 },
+//         { first: 'Brian', last: 'Chesky', year: 1981 },
+//         { first: 'Travis', last: 'Kalanick', year: 1976 },
+//         { first: 'Marc', last: 'Andreessen', year: 1971 },
+//         { first: 'Peter', last: 'Thiel', year: 1967 }
+// ];
 
-const books = [
-        { title: 'Gatsby le magnifique', id: 133712, rented: 39 },
-        { title: 'A la recherche du temps,perdu', id: 237634, rented: 28 },
-        { title: 'Orgueil & Préjugés', id: 873495, rented: 67 },
-        { title: 'Les frères Karamazov', id: 450911, rented: 55 },
-        { title: 'Dans les forêts de Sibérie', id: 8376365, rented: 15 },
-        { title: 'Pourquoi j\'ai mangé mon père', id: 450911, rented: 45 },
-        { title: 'Et on tuera tous les affreux', id: 67565, rented: 36 },
-        { title: 'Le meilleur des mondes', id: 88847, rented: 58 },
-        { title: 'La disparition', id: 364445, rented: 33 },
-        { title: 'La lune seule le sait', id: 63541, rented: 43 },
-        { title: 'Voyage au centre de la Terre', id: 4656388, rented: 38 },
-        { title: 'Guerre et Paix', id: 748147, rented: 19 }
-];
+// function filterByYear(entrepreneursArray) {
+//         let entrepreneursYear70 = [];
 
-function wasRented(books) {
-        let response = true;
-        books.forEach((book) => {
-                if (book.rented === 0) {
-                        response = false;
-                }
-        })
-        console.log(response ? 'Oui' : 'Non');
-}
+//         // Parcourir le tableau
+//         entrepreneursArray.forEach(entrepreneur => {
+//                 // Si l'attribut qui est dans l'objet est entre 1970 et 1980
+//                 if (entrepreneur.year >= 1970 && entrepreneur.year < 1980) {
+//                         entrepreneursYear70.push(entrepreneur);
+//                 }
+//         })
 
-function mostRented(books) {
-        let arrayRented = [];
+//         // Autre solution : L'utilisation de la fonction prédéfinie .filter()
+//         /*
+//         entrepreneursYear70 = entrepreneursArray.filter(entrepreneur => 
+//                                         entrepreneur.year >= 1970 && entrepreneur.year < 1980
+//         );
+//         */
 
-        books.forEach(book => arrayRented.push(book.rented));
+//         // Affichage
+//         console.log(entrepreneursYear70);
+// }
 
-        let mostRented = arrayRented.sort().reverse()[0];
-        let mostBookRented = books.find(book => book.rented == mostRented)
+// function filterFullName(entrepreneursArray) {
+//         let entrepreneursFullName = [];
 
-        console.log(mostBookRented);
+//         // Parcourir le tableau
+//         entrepreneursArray.forEach(entrepreneur => {
+//                 entrepreneursFullName.push(entrepreneur.last + " " + entrepreneur.first);
+//         })
+
+//         // Affichage
+//         console.log(entrepreneursFullName);
+
+//         // S'intéresser au .map() : cela peut-être une alternative
+// }
+
+// function ageToday(entrepreneursArray) {
+//         const currentYear = new Date().getFullYear();
+
+//         entrepreneursArray.forEach(entrepreneur => {
+//                 console.log(entrepreneur.first + " " + entrepreneur.last + ` aurait ${currentYear - entrepreneur.year} ans aujourd'hui.`);
+//         })
+// }
+
+// console.log('Les entrepreneurs nés dans les années 70 :');
+// filterByYear(entrepreneurs);
+// console.log('Les noms et prénoms des entrepreneurs :');
+// filterFullName(entrepreneurs);
+// console.log("Quel âge aurait chaque inventeur aujourd'hui ?")
+// ageToday(entrepreneurs);
+
+
+// // Exercice quatre.
+
+// const books = [
+//         { title: 'Gatsby le magnifique', id: 133712, rented: 39 },
+//         { title: 'A la recherche du temps,perdu', id: 237634, rented: 28 },
+//         { title: 'Orgueil & Préjugés', id: 873495, rented: 67 },
+//         { title: 'Les frères Karamazov', id: 450911, rented: 55 },
+//         { title: 'Dans les forêts de Sibérie', id: 8376365, rented: 15 },
+//         { title: 'Pourquoi j\'ai mangé mon père', id: 450911, rented: 45 },
+//         { title: 'Et on tuera tous les affreux', id: 67565, rented: 36 },
+//         { title: 'Le meilleur des mondes', id: 88847, rented: 58 },
+//         { title: 'La disparition', id: 364445, rented: 33 },
+//         { title: 'La lune seule le sait', id: 63541, rented: 43 },
+//         { title: 'Voyage au centre de la Terre', id: 4656388, rented: 38 },
+//         { title: 'Guerre et Paix', id: 748147, rented: 19 }
+// ];
+
+// function wasRented(books) {
+//         let response = true;
+//         books.forEach((book) => {
+//                 if (book.rented === 0) {
+//                         response = false;
+//                 }
+//         })
+//         console.log(response ? 'Oui' : 'Non');
+// }
+
+// function mostRented(books) {
+//         let arrayRented = [];
+
+//         books.forEach(book => arrayRented.push(book.rented));
+
+//         let mostRented = arrayRented.sort().reverse()[0];
+//         let mostBookRented = books.find(book => book.rented == mostRented)
+
+//         console.log(mostBookRented);
 
         // Ou
         /*
@@ -392,41 +392,126 @@ console.log(mostRented[0]);
         // sources : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
         // Ou 
         // s'intéresser au Math.max()
-}
+// }
 
-function lessRented(books) {
-        let arrayRented = [];
+// function lessRented(books) {
+//         let arrayRented = [];
 
-        books.forEach(book => {
-                arrayRented.push(book.rented);
-        })
-        let lessRented = arrayRented.sort()[0];
-        let lessBookRented = books.find(book => book.rented == lessRented)
-        console.log(lessBookRented);
-}
+//         books.forEach(book => {
+//                 arrayRented.push(book.rented);
+//         })
+//         let lessRented = arrayRented.sort()[0];
+//         let lessBookRented = books.find(book => book.rented == lessRented)
+//         console.log(lessBookRented);
+// }
 
-function findId(books) {
-        let idFind = books.find(book => book.id === 873495);
-        console.log(idFind);
-}
+// function findId(books) {
+//         let idFind = books.find(book => book.id === 873495);
+//         console.log(idFind);
+// }
 
-function deleteBook(books) {
-        let findBook = books.findIndex(book => book.id === 133712)
-        books.splice(findBook, 1);
-        console.log(books)
-}
+// function deleteBook(books) {
+//         let findBook = books.findIndex(book => book.id === 133712)
+//         books.splice(findBook, 1);
+//         console.log(books)
+// }
 
-console.log("Est-ce que tous les livres ont été au moins empruntés une fois ?");
-wasRented(books);
+// console.log("Est-ce que tous les livres ont été au moins empruntés une fois ?");
+// wasRented(books);
 
-console.log("Quel est le livre le plus emprunté ?");
-mostRented(books);
+// console.log("Quel est le livre le plus emprunté ?");
+// mostRented(books);
 
-console.log("Quel est le livre le moins emprunté ?");
-lessRented(books);
+// console.log("Quel est le livre le moins emprunté ?");
+// lessRented(books);
 
-console.log("Trouve le livre avec l'ID: 873495");
-findId(books);
+// console.log("Trouve le livre avec l'ID: 873495");
+// findId(books);
 
-console.log("Supprime le livre avec l'ID: 133712");
-deleteBook(books);
+// console.log("Supprime le livre avec l'ID: 133712");
+// deleteBook(books);
+
+
+
+
+                        // // JOUR TROIS.
+
+
+        // // EXERCICE UN.
+
+// // La copie s'éffectue au moment où l'on relâche la touche.
+document.addEventListener('input', () => {
+        // On récupère les input de index.html.
+        let originalText = document.querySelector('.originalText').value;
+        let copyText     = document.querySelector('.copyText');
+        
+        // Les deux valeurs sont copiées
+        copyText.value = originalText;
+});
+
+// Ou avec event.target.value.
+
+// document.addEventListener('input', (event) => {
+//         let copyText = document.querySelector('.copyText');
+//         copyText.value = event.target.value;
+// });
+
+
+        // // EXERCICE DEUX.
+
+document.addEventListener('input', () => {
+        // On récupère le input de l'exercice deux.
+        let numberToCalculate = document.querySelector('.number').value;
+        
+        // On prépare les variables pour modifier les lignes du tableau.
+        let numberInTable = document.querySelectorAll('.numberInTable');
+        let squareInTable = document.querySelectorAll('.squareInTable');
+        let cubeInTable   = document.querySelectorAll('.cubeInTable');
+        
+        // On calcule et implente les résultats.
+        numberInTable.forEach(element => element.textContent = numberToCalculate);
+        squareInTable.forEach(element => element.textContent = numberToCalculate * numberToCalculate);
+        cubeInTable.forEach(element => element.textContent = numberToCalculate * numberToCalculate * numberToCalculate);
+});
+
+
+        // // EXERCICE TROIS.
+
+// On récupère les éléments du DOM et l'on déclare leurs variables.
+let squareButton = document.querySelector('.squareButton');
+let square       = document.querySelector('.square'); 
+
+// Variable qui permet de connaître la position du carré.
+let position = 0;
+
+// Fonction fléchée qui déplace le carré.
+squareButton.addEventListener('click', () => {
+
+        if (position == 0) {
+                square.style.transform  = "translateY(100px)";
+                square.style.transition = "transform 0.3s ease";
+                position++;
+        }
+
+        else if (position == 1) {
+                square.style.transform  = "translate(100px, 100px)";
+                square.style.transition = "transform 0.3s ease";
+                position++;
+        }
+
+        else if (position == 2) {
+                square.style.transform  = "translateX(100px)";
+                square.style.transition = "transform 0.3s ease";
+                position++;
+        }
+
+        else if (position == 3) {
+                square.style.transform  = "translate(0)";
+                square.style.transition = "transform 0.3s ease";
+                position                = 0;
+        }
+});
+
+
+        // // EXERCICE QUATRE.
+
