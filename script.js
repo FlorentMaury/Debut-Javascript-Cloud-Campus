@@ -515,3 +515,18 @@ squareButton.addEventListener('click', () => {
 
         // // EXERCICE QUATRE.
 
+let big           = document.querySelector('.big');
+let small         = document.querySelectorAll('.small');
+
+small.forEach(image => {
+        image.style.border = "1px solid transparent";
+        image.addEventListener('click', displayImg);
+});
+
+function displayImg(event) {
+        small.forEach(image => {
+                image.style.border = "1px solid transparent";
+        });
+        big.src = event.target.src;
+        event.target.style.border = "1px solid red";
+};
